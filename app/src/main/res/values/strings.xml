@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Battleship War 2</string>
+    <string name="title_activity_settings">Setting</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header" translatable="false">Messages</string>
+    <string name="sync_header" translatable="false">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title" translatable="false">Your signature</string>
+    <string name="reply_title" translatable="false">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title" translatable="false">Sync email periodically</string>
+    <string name="attachment_title" translatable="false">Download incoming attachments</string>
+    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+
+    <!-- Background music Preferences -->
+    <string name="background_music">Play background music</string>
+    <string name="b_mute">Mute</string>
+    <string name="b_unmute">Unmute</string>
+
+    <!-- Silent mode Preferences -->
+    <string name="silentMode">Silent Mode</string>
+    <string name="s_on">On</string>
+    <string name="s_off">Off</string>
+
+    <!-- Dark mode Preferences -->
+    <string name="darkMode">Dark Mode</string>
+    <string name="d_off">Off</string>
+    <string name="d_on">On</string>
+
+    <!-- airplane altitude Preferences -->
+    <string name="airAltitude">Airplane Altitude</string>
+    <string name="a_off">Not Move Up and Down</string>
+    <string name="a_on">Move Up and Down</string>
+
+    <!-- submarine altitude Preferences -->
+    <string name="subAltitude">Submarine Depth</string>
+    <string name="su_off">Off</string>
+    <string name="su_on">On</string>
+
+    <!-- Frugality Mode Preferences -->
+    <string name="Frugality_Mode">Frugality Mode</string>
+    <string name="f_off">Off</string>
+    <string name="f_on">On</string>
+
+    <!-- Timer Preferences -->
+    <string name="timer">Timer</string>
+    <string name="timer_summary">Please select any timer preference</string>
+
+    <!-- Rapid fire Preferences -->
+    <string name="rapid_fire_title">Rapid-fire</string>
+    <string name="rapid_off">Off</string>
+    <string name="rapid_on">On</string>
+
+    <!-- Airplane Number Preferences -->
+    <string name="airNum_title">Number of airplane on the screen</string>
+    <string name="airNum_summary">Please select the amount of airplane</string>
+
+    <!-- Submarine number Preferences -->
+    <string name="subNum_title">Number of submarine on the screen</string>
+    <string name="subNum_summary">Please select the amount of submarine</string>
+
+    <!-- Airplane Speed Preferences -->
+    <string name="airSpeed_title">Airplane Speed</string>
+    <string name="airSpeed_summary">Set airplane speed</string>
+
+    <!-- Submarine Speed Preferences -->
+    <string name="subSpeed_title">Submarine Speed</string>
+    <string name="subSpeed_summary">Set submarine speed</string>
+
+    <!-- Airplane Direction Preferences -->
+    <string name="airDirection_title">Airplane Direction</string>
+    <string name="airDirection_summary">Set the Airplane direction</string>
+
+    <!-- Submarine Direction Preferences -->
+    <string name="subDirection_title">Submarine Direction</string>
+    <string name="subDirection_summary">Set the Submarine direction</string>
+
+    <!-- About dialog -->
+    <string name="about_dialog_title">About</string>
+    <string name="about_dialog_message">Captain! We detect the enemies is approaching us, we have three minutes to wait for our F-16 to support. Please cover us in this three minutes over!</string>
+    <string name="about_dialog_button">Yes</string>
+
+    <!-- Over dialog -->
+    <string name="over_dialog_title">GAME OVER</string>
+    <string name="over_dialog_message">Congratulations, You finish the game!!!. Want to play again?</string>
+    <string name="over_dialog_remessage1">Congratulations, You got the higher score: </string>
+    <string name="over_dialog_remessage2">!!!. Want to play again?</string>
+    <string name="over_dialog_positive_button">Yes</string>
+    <string name="over_dialog_negative_button">No</string>
+
+    <!-- Score and Time -->
+    <string name="highest_score">record</string>
+    <string name="time">time</string>
+    <string name="score">score</string>
+</resources>

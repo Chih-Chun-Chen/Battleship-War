@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Timer ArrayList -->
+        <string-array name="minute">
+            <item>1 分鐘</item>
+            <item>2 分鐘</item>
+            <item>3 分鐘</item>
+            <item>4 分鐘</item>
+            <item>5 分鐘</item>
+        </string-array>
+
+        <string-array name="user_minute">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+        </string-array>
+
+        <!-- Airplane Number ArrayList -->
+        <string-array name="Air_number">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+            <item>6</item>
+            <item>7</item>
+            <item>8</item>
+            <item>9</item>
+            <item>10</item>
+        </string-array>
+
+        <string-array name="user_Air_number">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+            <item>6</item>
+            <item>7</item>
+            <item>8</item>
+            <item>9</item>
+            <item>10</item>
+        </string-array>
+
+        <!-- Airplane Speed ArrayList -->
+        <string-array name="Sub_number">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+            <item>6</item>
+            <item>7</item>
+            <item>8</item>
+            <item>9</item>
+            <item>10</item>
+        </string-array>
+
+        <string-array name="user_Sub_number">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+            <item>6</item>
+            <item>7</item>
+            <item>8</item>
+            <item>9</item>
+            <item>10</item>
+        </string-array>
+
+        <!-- Airplane Speed ArrayList -->
+        <string-array name="Air_speed">
+            <item>快</item>
+            <item>中</item>
+            <item>慢</item>
+        </string-array>
+
+        <string-array name="user_Air_seed">
+            <item>20</item>
+            <item>15</item>
+            <item>5</item>
+        </string-array>
+
+        <!-- Submrine Speed ArrayList -->
+        <string-array name="Sub_speed">
+            <item>快</item>
+            <item>中</item>
+            <item>慢</item>
+        </string-array>
+
+        <string-array name="user_Sub_seed">
+            <item>20</item>
+            <item>15</item>
+            <item>5</item>
+        </string-array>
+
+        <!-- Airplane Direction ArrayList -->
+        <string-array name="Air_Direction">
+            <item>左到右</item>
+            <item>右到左</item>
+            <item>左到右/右到左</item>
+        </string-array>
+
+        <string-array name="user_Air_Direction">
+            <item>0</item>
+            <item>1</item>
+            <item>2</item>
+        </string-array>
+
+        <!-- Submarine Direction ArrayList -->
+        <string-array name="Sub_Direction">
+            <item>左到右</item>
+            <item>右到左</item>
+            <item>左到右/右到左</item>
+        </string-array>
+
+        <string-array name="user_Sub_Direction">
+            <item>0</item>
+            <item>1</item>
+            <item>2</item>
+        </string-array>
+</resources>

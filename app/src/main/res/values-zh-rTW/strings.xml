@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">艦艇戰爭2</string>
+    <string name="title_activity_settings">設定</string>
+
+
+    <!-- Background music Preferences -->
+    <string name="background_music">背景音樂</string>
+    <string name="b_mute">關</string>
+    <string name="b_unmute">開</string>
+
+    <!-- Silent mode Preferences -->
+    <string name="silentMode">靜音模式</string>
+    <string name="s_on">開</string>
+    <string name="s_off">關</string>
+
+    <!-- Dark mode Preferences -->
+    <string name="darkMode">夜間模式</string>
+    <string name="d_off">關</string>
+    <string name="d_on">開</string>
+
+    <!-- airplane altitude Preferences -->
+    <string name="airAltitude">飛機浮動</string>
+    <string name="a_off">關</string>
+    <string name="a_on">開</string>
+
+    <!-- submarine altitude Preferences -->
+    <string name="subAltitude">潛艇浮動</string>
+    <string name="su_off">關</string>
+    <string name="su_on">開</string>
+
+    <!-- Frugality Mode Preferences -->
+    <string name="Frugality_Mode">分數倒扣機制</string>
+    <string name="f_off">關</string>
+    <string name="f_on">開</string>
+
+    <!-- Timer Preferences -->
+    <string name="timer">時間</string>
+    <string name="timer_summary">設制時間</string>
+
+    <!-- Rapid fire Preferences -->
+    <string name="rapid_fire_title">射擊限制</string>
+    <string name="rapid_off">關</string>
+    <string name="rapid_on">開</string>
+
+    <!-- Airplane Number Preferences -->
+    <string name="airNum_title">飛機數量</string>
+    <string name="airNum_summary">選擇飛機數量</string>
+
+    <!-- Submarine number Preferences -->
+    <string name="subNum_title">潛艇數量</string>
+    <string name="subNum_summary">選擇潛艇數量</string>
+
+    <!-- Airplane Speed Preferences -->
+    <string name="airSpeed_title">飛機數度</string>
+    <string name="airSpeed_summary">選擇飛機數度</string>
+
+    <!-- Submarine Speed Preferences -->
+    <string name="subSpeed_title">潛艇數度</string>
+    <string name="subSpeed_summary">選擇潛艇數度</string>
+
+    <!-- Airplane Direction Preferences -->
+    <string name="airDirection_title">飛機方向</string>
+    <string name="airDirection_summary">選擇飛機方向</string>
+
+    <!-- Submarine Direction Preferences -->
+    <string name="subDirection_title">潛艇方向</string>
+    <string name="subDirection_summary">選擇潛艇方向</string>
+
+    <string name="about_dialog_title">關於</string>
+    <string name="about_dialog_message">隊長！我們檢測到敵人正在接近我們，我們有三分鐘的時間等待我們的 F-16 支援。請在這三分鐘內掩護我們！</string>
+    <string name="about_dialog_button">好</string>
+
+    <!-- Over dialog -->
+    <string name="over_dialog_title">遊戲結束</string>
+    <string name="over_dialog_message">恭喜，你完成了遊戲！！！想再玩一次嗎？</string>
+    <string name="over_dialog_remessage1">恭喜你獲得了更高的分數：</string>
+    <string name="over_dialog_remessage2">!!!.想再玩一次嗎？</string>
+    <string name="over_dialog_positive_button">是</string>
+    <string name="over_dialog_negative_button">否</string>
+
+    <!-- Score and Time -->
+    <string name="highest_score">最高紀錄</string>
+    <string name="score">分數</string>
+    <string name="time">時間</string>
+</resources>

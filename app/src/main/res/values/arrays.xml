@@ -1,0 +1,135 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+
+    <!-- Timer ArrayList -->
+    <string-array name="minute">
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+        <item>4 minutes</item>
+        <item>5 minutes</item>
+    </string-array>
+
+    <string-array name="user_minute">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- Airplane Number ArrayList -->
+    <string-array name="Air_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="user_Air_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Airplane Speed ArrayList -->
+    <string-array name="Sub_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="user_Sub_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Airplane Speed ArrayList -->
+    <string-array name="Air_speed">
+        <item>Fast</item>
+        <item>Medium</item>
+        <item>Slow</item>
+    </string-array>
+
+    <string-array name="user_Air_seed">
+        <item>20</item>
+        <item>15</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- Submrine Speed ArrayList -->
+    <string-array name="Sub_speed">
+        <item>Fast</item>
+        <item>Medium</item>
+        <item>Slow</item>
+    </string-array>
+
+    <string-array name="user_Sub_seed">
+        <item>20</item>
+        <item>15</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- Airplane Direction ArrayList -->
+    <string-array name="Air_Direction">
+        <item>Left-To-Right</item>
+        <item>Right-To-Left</item>
+        <item>Both</item>
+    </string-array>
+
+    <string-array name="user_Air_Direction">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Submarine Direction ArrayList -->
+    <string-array name="Sub_Direction">
+        <item>Left-To-Right</item>
+        <item>Right-To-Left</item>
+        <item>Both</item>
+    </string-array>
+
+    <string-array name="user_Sub_Direction">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>
