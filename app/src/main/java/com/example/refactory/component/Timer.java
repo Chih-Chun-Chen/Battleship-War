@@ -9,9 +9,10 @@ import java.util.ArrayList;
 
 public class Timer extends Handler {
 
-    ArrayList<TickListener> tickListenersList = new ArrayList<>();
+    private static Timer timer;
+    private ArrayList<TickListener> tickListenersList = new ArrayList<>();
 
-    public Timer(){
+    private Timer(){
         sendMessageDelayed(obtainMessage(), 1000);
     }
 
@@ -29,6 +30,13 @@ public class Timer extends Handler {
 
         notifyObserver();
         sendMessageDelayed(obtainMessage(), 33);
+    }
+
+    public static Timer getTimer() {
+        if (timer == null) {
+            timer = new Timer();
+        }
+        return timer;
     }
 
     /**

@@ -78,9 +78,13 @@ public class ComponentView extends View implements TickListener {
      */
     public ComponentView(Context context) {
         super(context);
-        readFile();
+        try {
+            readFile();
+        } catch (Exception e) {
+            currentScore = 0;
+        }
         water = BitmapFactory.decodeResource(getResources(), R.drawable.water);
-        timer = new Timer();
+        timer = Timer.getTimer();
         scale = false;
     }
 
@@ -97,7 +101,7 @@ public class ComponentView extends View implements TickListener {
 
             if (scale == false) {
                 paint = new Paint();
-                battleship = new Battleship(getResources(), width);
+                battleship = Battleship.getBattleship(getResources(), width);
                 airplanesList = new ArrayList<>();
                 submarineList = new ArrayList<>();
                 depthChargeList = new ArrayList<>();
@@ -115,23 +119,19 @@ public class ComponentView extends View implements TickListener {
                 secondDigitSecond = 0;
                 createSounds();
 
-                for (int i = 0; i < airplaneAmount; i++) {
+                for (int i = 0; i < airplaneAmount; i++)
                     airplanesList.add(new Airplane(getContext(), width, height));
-                }
 
-                for (int i = 0; i < submarineAmount; i++) {
+                for (int i = 0; i < submarineAmount; i++)
                     submarineList.add(new Submarine(getContext(), width, height));
-                }
 
                 //Register all the airplane
-                for (int i = 0; i < airplaneAmount; i++) {
+                for (int i = 0; i < airplaneAmount; i++)
                     timer.register(airplanesList.get(i));
-                }
 
                 //Register all the submarine
-                for (int i = 0; i < submarineAmount; i++) {
+                for (int i = 0; i < submarineAmount; i++)
                     timer.register(submarineList.get(i));
-                }
 
                 //Position of sprite
                 PointF battleshipPoint = new PointF();
@@ -153,8 +153,6 @@ public class ComponentView extends View implements TickListener {
                     int RandomY = (int) (Math.random() * 100 + height / 2);
                     sb.setPosition(RandomX, RandomY);
                 }
-
-                timer = new Timer();
                 scale = true;
             }
 
@@ -430,7 +428,11 @@ public class ComponentView extends View implements TickListener {
             box.show();
             if (currentScore > higherScore) {
                 higherScore = currentScore;
-                writeFile();
+                try {
+                    writeFile();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
@@ -444,24 +446,15 @@ public class ComponentView extends View implements TickListener {
         invalidate();
     }
 
-    private void readFile() {
-        try {
-            var inputFile = getContext().openFileInput("score.txt");
-            Scanner s = new Scanner(inputFile);
+    private void readFile() throws Exception{
+        try(Scanner s = new Scanner(getContext().openFileInput("score.txt"));) {
             higherScore = s.nextInt();
-            s.close();
-        } catch (FileNotFoundException e) {
-            currentScore = 0;
         }
     }
 
-    private void writeFile() {
-        try {
-            var outputFile = getContext().openFileOutput("score.txt", Context.MODE_PRIVATE);
+    private void writeFile() throws Exception {
+        try(var outputFile = getContext().openFileOutput("score.txt", Context.MODE_PRIVATE)) {
             outputFile.write(("" + higherScore).getBytes());
-            outputFile.close();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 

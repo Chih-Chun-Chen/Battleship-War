@@ -10,14 +10,15 @@ import com.example.refactory.R;
 
 
 public class Battleship extends Sprite {
-
+    private static Battleship battleship;
     Paint color;
+
     /**
      * Constructor of Battleship
      * @param res
      * @param width To pass width from ComponentView to Battleship class
      */
-    public Battleship(Resources res, float width){
+    private Battleship(Resources res, float width){
         super();
         color = new Paint();
         color.setColor(Color.RED);
@@ -42,14 +43,38 @@ public class Battleship extends Sprite {
         }
     }
 
+    /**
+     * Singleton method
+     * @param res
+     * @param width
+     * @return Battleship
+     */
+    public static Battleship getBattleship(Resources res, float width) {
+        if (battleship == null) {
+            battleship = new Battleship(res, width);
+        }
+        return battleship;
+    }
+
+    /**
+     * To get battleship left bound
+     * @return float
+     */
     public float getBattleshipLeft(){
         return spriteBounds.left;
     }
 
+    /**
+     * To get battleship right bound
+     * @return float
+     */
     public float getBattleshipRight(){
         return spriteBounds.right;
     }
 
+    /**
+     * battleship tick method
+     */
     @Override
     public void tick() {
         this.move();

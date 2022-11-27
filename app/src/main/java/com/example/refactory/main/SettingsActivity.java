@@ -160,7 +160,6 @@ public class SettingsActivity extends AppCompatActivity {
             subDirectionPref.setEntries(R.array.Sub_Direction);
             subDirectionPref.setEntryValues(R.array.user_Sub_Direction);
 
-
             screen.addPreference(musicPref);
             screen.addPreference(silentPref);
             screen.addPreference(darkModePref);
@@ -177,7 +176,6 @@ public class SettingsActivity extends AppCompatActivity {
             screen.addPreference(frugalityPref);
             setPreferenceScreen(screen);
         }
-
 
         /**
          * Method for background music preference
