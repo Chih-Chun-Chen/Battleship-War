@@ -2,9 +2,6 @@ package com.example.refactory.component;
 
 import android.os.Handler;
 import android.os.Message;
-
-import com.example.refactory.main.ComponentView;
-
 import java.util.ArrayList;
 
 public class Timer extends Handler {
@@ -24,9 +21,9 @@ public class Timer extends Handler {
     public void handleMessage(Message m){
 
 
-        for (TickListener subscriber : tickListenersList) {
-            subscriber.tick();
-        }
+//        for (TickListener subscriber : tickListenersList) {
+//            subscriber.tick();
+//        }
 
         notifyObserver();
         sendMessageDelayed(obtainMessage(), 33);
