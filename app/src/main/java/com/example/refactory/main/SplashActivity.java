@@ -22,6 +22,11 @@ public class SplashActivity extends Activity {
         setContentView(homepageImage);
     }
 
+    /**
+     * onTouchEvent method
+     * @param m
+     * @return
+     */
     @Override
     public boolean onTouchEvent(MotionEvent m) {
         var w = homepageImage.getWidth();

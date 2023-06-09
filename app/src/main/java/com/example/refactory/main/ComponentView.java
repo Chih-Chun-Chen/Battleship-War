@@ -37,7 +37,7 @@ public class ComponentView extends View implements TickListener {
     float depthChargeX;
     float depthChargeY;
     private PointF firePoisition;
-    private Battleship battleship;
+        private Battleship battleship;
     private Bitmap water;
     private Bitmap fire;
     private DepthCharge depthCharges;

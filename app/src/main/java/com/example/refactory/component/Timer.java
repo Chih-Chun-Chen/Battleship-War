@@ -7,9 +7,10 @@ import java.util.ArrayList;
 public class Timer extends Handler {
 
     private static Timer timer;
-    private ArrayList<TickListener> tickListenersList = new ArrayList<>();
+    private ArrayList<TickListener> tickListenersList;
 
     private Timer(){
+        tickListenersList = new ArrayList<>();
         sendMessageDelayed(obtainMessage(), 1000);
     }
 
@@ -20,15 +21,15 @@ public class Timer extends Handler {
     @Override
     public void handleMessage(Message m){
 
-
-//        for (TickListener subscriber : tickListenersList) {
-//            subscriber.tick();
-//        }
-
         notifyObserver();
         sendMessageDelayed(obtainMessage(), 33);
     }
 
+
+    /**
+     * Singleton method
+     * @return
+     */
     public static Timer getTimer() {
         if (timer == null) {
             timer = new Timer();
